@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+
+#first{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: lightpink;
+    border: 2px solid honeydew;
+    display: inline-block;
+    position: static;
+    /* not work as position is static */
+    left: 500px; 
+
+
+}
+#second{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: lightpink;
+    border: 2px solid honeydew;
+    display: inline-block;
+    position: relative;
+    top: 20px;
+
+
+}
+#third{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: lightpink;
+    border: 2px solid honeydew;
+    display: inline-block;
+    position: absolute;
+    top:300px;
+
+}
+#forth{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: lightpink;
+    border: 2px solid honeydew;
+    display: inline-block;
+
+
+}

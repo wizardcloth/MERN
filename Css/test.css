@@ -1,0 +1,11 @@
+div{
+    background-color: lime ;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 10px 10px 10px 10px;
+}
+#second{
+    display: none;
+}

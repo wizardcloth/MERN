@@ -1,0 +1,21 @@
+.grid{
+    width: 600px;
+    height: 400px;
+    background-color: black;
+    display: grid;
+    /* grid-template-rows:100px 100px ; */
+    /* grid-template-columns:100px 100px 100px; */
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    place-items: center;
+}
+.item{
+    /* margin: 10px; */
+    width: 100px;
+    height: 100px;
+    background-color: lawngreen;
+    border: 2px solid azure;
+    text-align: center;
+    
+}

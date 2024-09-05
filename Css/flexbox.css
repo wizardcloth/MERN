@@ -1,0 +1,29 @@
+#one,
+#two,
+#three,
+#four,
+#five {
+    margin: 10px auto;
+    width: 200px;
+    height: 200px;
+    border: 2px solid darkblue;
+    background-color: aqua;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+#one{
+    flex-basis: 250px;
+}
+
+#zero{
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+#zero-1{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}

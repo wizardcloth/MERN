@@ -1,0 +1,46 @@
+h1{
+    text-align: center;
+    font-family: cursive;
+    font-size: 50px;
+    margin-top: 20px;
+    padding-top: 10px;
+
+}
+#box{
+    width: 800px;
+    height: 600px;
+    background-color:aliceblue;
+    margin: 0px auto;
+}
+#new {
+    width: 500px;
+    height: 300px;
+    background-color: aqua;
+    margin: 20px auto;
+}
+#buttons{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    
+}
+.button{
+    width: 20%;
+    height: 30px;
+    border-radius: 50px;
+    border: 2px solid black;
+    background-color: lightgreen;
+
+}
+.para{
+    /* width: 500px; */
+    /* height: 400px; */
+    line-height: 1.5;
+    font-size: 23px;
+}
+#text{
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+
+}

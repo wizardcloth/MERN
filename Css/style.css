@@ -1,0 +1,63 @@
+/** universal selector : select all the document */
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: whitesmoke;
+}
+
+/** element selector */
+
+h1,h3{ 
+    color: tomato;
+    text-decoration:underline;
+}
+
+/** id selector */
+
+#login,#signup{
+    background-color: rgba(26, 255, 26, 0.753)
+}
+
+/** class selector */
+
+.upvote,.answer{
+    background-color: royalblue;
+    color: whitesmoke;    
+}
+
+/** descendant selector */
+
+p a{
+    color: plum;
+    text-decoration: none;
+}
+
+
+nav > ul > li{
+    color: yellow;
+}
+
+input[type = "password"]  /* dont give space */
+{
+    color: red;
+}
+h3:hover{
+    text-decoration: none;
+}
+button:active{
+    background-color: green;
+}
+input[type = "radio"]:checked + label {
+    color: rgb(255, 14, 58);
+    font-weight: 800;
+}
+input{
+    background-color: inherit;
+}
+p h1 button{
+    color: yellow;
+}
+
+.h1{
+    color:slateblue;
+}

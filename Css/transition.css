@@ -1,0 +1,73 @@
+#first{
+    height: 200px;
+    width: 200px;
+    background-color: lightgreen;
+    border: 2px solid black;
+    transition-duration: 1.0s;
+    margin: 10px;
+}
+#first:hover{
+    background-color: blue;
+    border-radius: 50%;
+}
+#second{
+    height: 100px;
+    width: 100px;
+    background-color: palegoldenrod;
+    border: 2px solid black;
+    margin: 0 auto;
+    transition: margin-top 2s ease-in-out 0.2s;
+}
+#second:hover{
+    margin-top: 200px;
+}
+#third{
+    height: 200px;
+    width: 200px;
+    background-color: lightgreen;
+    border: 2px solid black;
+    transition-duration: 1.0s;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration:1s ;
+    /* transform: scale(0.5); */
+}
+#third:hover{
+    transform:rotate(720deg);
+}
+#forth{
+    height: 200px;
+    width: 200px;
+    background-color: lightgreen;
+    border: 2px solid black;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.5);
+}
+#fifth{
+    height: 200px;
+    width: 200px;
+    background-color: lightgreen;
+    border: 2px solid black;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: skew(-10deg);
+
+}
+#sixth{
+    height: 200px;
+    width: 200px;
+    background-color: lightgreen;
+    border: 2px solid black;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(100px);
+}
