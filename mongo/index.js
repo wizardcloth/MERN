@@ -11,14 +11,31 @@ async function main() {
 }
 
 const userschema = new mongoose.Schema({
-    name: String,
+    name: {
+        type: String,
+        maxLength: 30,
+    },
     email: String,
-    age: Number,
+    //&or
+    age: {
+        type: Number,
+        required: true,
+        default: 0,
+        // to print custom error msz if constraint is not followed
+        min: [1, "this is custom error"]  //avoid negative value
+    },
+    hobbies: {
+        type: String,
+        //& user input should be in the enum array
+        enum: ["playing", "studing"],
+        // or to store data in array format
+        likes: [String],
+    }
 });
 const User = mongoose.model("User", userschema);
 
 //^ create
-// const user1 = User({ name: "rob", email: "jon@gmail.com", age: 50 });
+// const user1 = User({ name: "rdob", email: "jgon@gmail.com", age: -50, hobbies: "playing" });
 // const user2 = User({ name: "rob", email: "jon@gmail.com", age: 50 });
 
 //&or
@@ -27,7 +44,7 @@ const User = mongoose.model("User", userschema);
 
 
 
-// user.save()
+// user1.save()
 //     .then((res) => {
 //         console.log(res);
 //     }).catch((err) => {
@@ -37,7 +54,7 @@ const User = mongoose.model("User", userschema);
 //^ read
 //&find
 
-// User.find({}).then((res)=>{
+// User.find({}).then((res) => {
 //     console.log(res);
 // });
 
@@ -69,9 +86,11 @@ const User = mongoose.model("User", userschema);
 
 //^ UPDATE
 
-// User.updateOne({name:"mob"},{age:5})
+// User.updateOne({name:"mob"},{age:5},{runValidators : true})
 // .then((res)=>{
 //     console.log(res);
+// }).catch((err)=>{
+//     console.log(err.errors.age.message);
 // });
 
 // User.updateMany({age:50},{age:100});
@@ -82,4 +101,24 @@ const User = mongoose.model("User", userschema);
 
 //^ delete
 
+// User.deleteOne({ name: "ram" })
+//     .then((res) => {
+//         console.log(res)
+//     }).catch((err) => {
+//         console.log(err);
+//     });
+
+//     // or
+
+// User.deleteMany({ age: 50 })
+//     .then((res) => {
+//         console.log(res)
+//     }).catch((err) => {
+//         console.log(err);
+//     });
+
+//&to show what is deleted
+
+// User.findByIdAndDelete()
+// User.findOneAndDelete()
 

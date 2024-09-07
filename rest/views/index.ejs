@@ -4,31 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/style.css">
+    <title>Post Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 20px;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        .card-header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+        }
+        .btn-custom {
+            margin-right: 10px;
+        }
+        .container {
+            max-width: 900px;
+        }
+        .page-header {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>POST WEBSITE</h1>
-    <% for (post of posts){ %>
-        <div class="div">
-            <h2 class="h2">YOUR ID : <%= post.id %>
-            </h2>
-            <h2 class="h2">YOUR USERNAME : <%= post.username %>
-            </h2>
-            <h3 class="h3">ABOUT : <%= post.about%>
-            </h3>
-            <a href="http://localhost:3000/posts/<%= post.id %>"><button>SEE IT</button></a>
-            <a href="http://localhost:3000/posts/<%= post.id %>/edit"><button>EDIT IT</button></a>
-            <form action="/posts/<%=post.id%>?_method=DELETE" method="post">
-                <button>DELETE</button>
-            </form>
+    <div class="container">
+        <div class="page-header">
+            <h1>Post Website</h1>
+        </div>
+
+        <% for (post of posts) { %>
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">User ID: <%= post.id %></h4>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Username: <%= post.username %></h5>
+                <p class="card-text">About: <%= post.about %></p>
+                <a href="http://localhost:3000/posts/<%= post.id %>" class="btn btn-primary btn-custom">See It</a>
+                <a href="http://localhost:3000/posts/<%= post.id %>/edit" class="btn btn-warning btn-custom">Edit It</a>
+                <form action="/posts/<%= post.id %>?_method=DELETE" method="post" style="display:inline;">
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+            </div>
         </div>
         <% } %>
-            <br>
-            <br>
-            <a href="http://localhost:3000/posts/new">CLICK FOR NEW POST</a>
 
+        <div class="text-center">
+            <a href="http://localhost:3000/posts/new" class="btn btn-success">Click for New Post</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

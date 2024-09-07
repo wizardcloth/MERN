@@ -3,14 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/style.css">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .card-container {
+            max-width: 600px;
+            margin: 50px auto;
+        }
+        .card-header {
+            background-color: #007bff;
+            color: white;
+        }
+        .card-body {
+            background-color: #ffffff;
+        }
+    </style>
 </head>
 <body>
-    <div class="div">
-        <h2 class="h2">YOUR ID : <%= post.id %></h2>
-        <h2 class="h2">USERNAME : <%= post.username %></h2>
-        <h3 class="h3">ABOUT : <%= post.about %></h3>
+    <div class="container card-container">
+        <div class="card">
+            <div class="card-header text-center">
+                <h2 class="card-title">User Profile</h2>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">YOUR ID : <%= post.id %></h5>
+                <h5 class="card-title">USERNAME : <%= post.username %></h5>
+                <p class="card-text">ABOUT : <%= post.about %></p>
+            </div>
+        </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
