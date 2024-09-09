@@ -1,0 +1,56 @@
+body{
+    margin: 20px;
+   
+}
+.box{
+    display: flex;
+    /* justify-content:space-between; */
+    flex-wrap: wrap;
+    /* word-wrap: break-word; */
+}
+.chat{
+    background-color: lightblue;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 30px;
+    /* width: 100px; */
+
+}
+.btn{
+    color: white;
+    background-color: mediumturquoise;
+    padding: 10px;
+    width: 150px;
+    border-radius: 20px;
+}
+.form{
+    font-size: 30px;
+    margin: 20px;
+    padding: 30px;
+    background-color: aliceblue;
+
+}
+#to{
+    font-size: 25px;
+    border-radius: 20px ;
+    margin-left: 65px;
+    width: 250px;
+    padding: 10px;
+    background-color: whitesmoke;
+}
+#from{
+    font-size: 25px;
+    border-radius: 20px ;
+    margin-left: 30px;
+    width: 250px;
+    padding: 10px;
+    background-color: whitesmoke;
+}
+#msz{
+    font-size: 25px;
+    border-radius: 20px ;
+    margin-left: 30px;
+    width: 300px;
+    padding: 10px;
+    background-color: whitesmoke;
+}
