@@ -1,0 +1,9 @@
+.product{
+    display: inline-block;
+    border-radius: 20px;
+    border: 2px solid whitesmoke;
+    margin: 20px;
+    padding: 10px;
+    color: palegreen;
+
+}
