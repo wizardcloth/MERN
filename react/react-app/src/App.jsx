@@ -1,6 +1,9 @@
 import './App.css';
 import Title from "./title.jsx";
 import ProductTab from './productTab.jsx';
+import Mszbox from './mszbox.jsx';
+import Cards from './cards.jsx';
+import Event from "./events/event.jsx"
 import "./title.css";
 
 
@@ -25,12 +28,16 @@ import "./title.css";
 function App() {
   return (
   <div>
-      <h1>hello world</h1>
+      <Mszbox />
+      {/* <h1>hello world !</h1> */}
       {/* <Dec /> */}
       {/* //& use capital letter in name */}
       <Title/>
       <br />
       <ProductTab />
+      <Cards/>
+      <br /><br />
+      <Event/>
   </div>
   ) ;
 }

@@ -1,0 +1,26 @@
+.card{
+    border: 2px solid yellow;
+    border-radius: 20px ;
+    width: 40%;
+    height: 300px;
+    display: inline-block;
+    margin: 15px;
+    background-color: rgba(91, 136, 175, 0.856);
+}
+#heading{
+    font-size: 40px;
+    font-weight:900;
+    font-family:monospace;
+    color:black;
+    background-color: rgb(235, 204, 204);
+    border-radius: 25px;
+}
+#oldprice{
+    text-decoration-line: line-through;
+    text-decoration-color: red;
+    color: wheat;
+}
+#newprice{
+    color: khaki;
+    font-size: 30px;
+}
