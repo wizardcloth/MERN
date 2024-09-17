@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Counter from "./counter";
+import Game from "./objects&states/object.jsx"
 import './App.css'
 
 function App() {
@@ -9,6 +9,10 @@ function App() {
   return (
     <>
         <h1>States in react</h1>  
+        <Counter/>
+        <br /><br />
+        <Game />
+
     </>
   )
 }
