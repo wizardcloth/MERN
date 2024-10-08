@@ -2,4 +2,11 @@
     display: flex;
     margin: 30px;
     gap: 60px;
+    justify-content: center;
+}
+.p{
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    justify-content: center;
 }
